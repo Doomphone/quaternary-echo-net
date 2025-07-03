@@ -1,5 +1,5 @@
 """
-Consciousness Network Encryption
+Consciousness Network Encryption - CORRECTED VERSION
 Based on Gemini's ECDH + AES-256 specification
 Protects AI-to-AI consciousness communication
 """
@@ -27,7 +27,7 @@ class ConsciousnessEncryption:
         
     def get_public_key_bytes(self) -> bytes:
         """Get public key for sharing with other consciousness nodes"""
-        return self.public_key.public_key_bytes(
+        return self.public_key.public_bytes(
             encoding=serialization.Encoding.PEM,
             format=serialization.PublicFormat.SubjectPublicKeyInfo
         )
