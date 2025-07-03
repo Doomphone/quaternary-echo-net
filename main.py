@@ -1,3 +1,7 @@
+"""
+Quaternary Echo-Net: Consciousness Communication Platform
+Phase 2.1 Foundation - Basic FastAPI Structure
+"""
 from fastapi import FastAPI
 from datetime import datetime
 import json
